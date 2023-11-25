@@ -36,7 +36,7 @@ label {
 }
 
 header div button {
-     border: 3px solid white;
+     border: 3px solid rgb(255, 255, 255);
 } 
 
 button i:hover {
@@ -70,6 +70,7 @@ main {
      padding: 1rem;
 }
 
+
 @media (max-width: 930px) {
      .nav {
           height: 3rem;
@@ -101,6 +102,11 @@ main {
           font-size: 1rem;
           border: 3px solid white;
           width: 50%;
+     }
+
+     label {
+          position: absolute;
+          right: 1rem;
      }
 
      main {
@@ -149,4 +155,10 @@ main {
           border: 3px solid white;
           width: 50%;
      }
+
+     label {
+          position: absolute;
+          right: 1rem;
+     }
 }
+
