@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Weather App</title>
+     <link rel="stylesheet" href="style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+     <header>
+          <div class="nav bg-primary">
+               <div class="heading ">WEATHER</div>
+               <input type="text" placeholder="Enter a city" name="" id="inpt" class=" h-75 bg-light">
+               <label for="inpt">
+                    <button class="submit bg-light"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+               </label>
+          </div>
+     </header>
+     <main>
+          <div class="main-card">
+               <div class="card h-75 w-75">
+                    <h3><b>Today</b></h3>
+                    <div class="data">
+                         <img src="weatImg.png" alt="" height="90px">
+                         <p style="display: inline;" class="temp">Temparture</p>
+                         <P>Wind : <b class="wind"></b></P>
+                         <p>Description : <b class="description"></b></p>
+                    </div>
+               </div>
+               <div class="card h-75 w-75">
+                    <h3><b>Tomorrow</b></h3>
+                    <div class="data">
+                         <img src="weatImg.png" alt="" height="90px">
+                         <p style="display: inline;" class="temp-for1">Temparture</p>
+                         <p>Wind : <b class="wind-for1"></b></p>
+                    </div>
+               </div>
+               <div class="card h-75 w-75">
+                    <h3><b>Day-2</b></h3>
+                    <div class="data">
+                         <img src="weatImg.png" alt="" height="90px">
+                         <p style="display: inline;" class="temp-for2">Temparture</p>
+                         <P>Wind : <b class="wind-for2"></b></P>
+                    </div>
+               </div>
+               <div class="card h-75 w-75">
+                    <h3><b>Day-3</b></h3>
+                    <div class="data">
+                         <img src="weatImg.png" alt="" height="90px">
+                         <p style="display: inline;" class="temp-for3">Temparture</p>
+                         <P>Wind : <b class="wind-for3"></b></P>
+                    </div>
+               </div>
+          </div>
+     </main>
+     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+     <script src="app.js"></script>
+</body>
+
+</html

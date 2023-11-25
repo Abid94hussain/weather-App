@@ -1,0 +1,152 @@
+* {
+     padding: 0;
+     margin: 0;
+     font-family: 'Times New Roman', Times, serif;
+}
+
+.nav {
+     height: 5rem;
+     display: flex;
+     justify-content:space-between;
+     align-items:center;
+}
+
+.heading {
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 3rem;
+     font-weight: 500;
+     color: white;
+     margin: 0rem 1rem;
+}
+
+#inpt {
+     margin-right: 1rem;
+     font-size: 2rem;
+     border: 3px solid white;
+     width: 70%;
+}
+
+#inpt:focus {
+     outline: none;
+}
+
+label {
+     position: absolute;
+     right: 3rem;
+}
+
+header div button {
+     border: 3px solid white;
+} 
+
+button i:hover {
+     opacity: 0.6;
+}
+
+main {
+     height: 23rem;
+     background-image: url("weatherImage.jpg");
+     background-attachment: scroll;
+     background-repeat: no-repeat;
+     background-size:cover;
+     background-position: 100;
+     margin: 3rem 0rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.main-card {
+     height: 90%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20px;
+     background-color: rgb(255, 255, 255, 0.5)
+}
+
+.card {
+     margin: 0rem 1rem;
+     padding: 1rem;
+}
+
+@media (max-width: 930px) {
+     .nav {
+          height: 3rem;
+          display: flex;
+          justify-content:space-between;
+          align-items:center;
+     }
+     .heading {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 2rem;
+          font-weight: 500;
+          color: white;
+          margin: 0rem 1rem;
+     }
+}
+
+@media (max-width: 670px) {
+     
+     .heading {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: white;
+          margin: 0rem 1rem;
+     }
+
+     #inpt {
+          margin-right: 1rem;
+          font-size: 1rem;
+          border: 3px solid white;
+          width: 50%;
+     }
+
+     main {
+          background-image: none;
+          margin: 20rem 0rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+     }
+
+     .main-card {
+          display: flex;
+          justify-content: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 20rem;
+     }
+
+     .card {
+          margin-bottom: 1rem;
+          box-shadow: 2px 2px 2px 2px rgb(150, 148, 148);
+          
+     }
+}
+
+@media (max-width: 344px) {
+     .nav {
+          height: 2.5rem;
+          display: flex;
+          justify-content:space-between;
+          align-items:center;
+     }
+
+     .heading {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: white;
+          margin: 0rem 0.5rem;
+     }
+
+     #inpt {
+          margin-right: 0.5rem;
+          font-size: 1rem;
+          border: 3px solid white;
+          width: 50%;
+     }
+}
